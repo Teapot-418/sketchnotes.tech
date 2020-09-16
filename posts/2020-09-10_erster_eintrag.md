@@ -1,5 +1,7 @@
 ---
+layout: layout
 pageTitle: Der erste Blog-Post
+tags: posts
 ---
 Hier entsteht eine neue Webpräsenz, auf die ich mich bereits sehr freue.
 Woher kommen diese blöden Striche, die ich nicht haben möchte?
