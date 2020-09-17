@@ -1,5 +1,5 @@
 ---
-layout: layout.pug
+layout: layouts/base.njk
 pageTitle: Über mich
 ---
 

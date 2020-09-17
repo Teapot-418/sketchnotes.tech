@@ -1,0 +1,15 @@
+---
+layout: layouts/base.njk
+---
+
+<h1>Blog</h1>
+
+<section>
+{% for blogentry in collections.blog %}
+    <article>
+        <h2><a href="{{ blogentry.url }}">{{ blogentry.data.pageTitle }}</a></h2>
+        <time datetime="{{blogentry.data.date}}">{{ blogentry.data.readableDate }}</time>
+        <p>{{ blogentry.data.description }}</p>
+    </article>
+{% endfor %}
+</section>
