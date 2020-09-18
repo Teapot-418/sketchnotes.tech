@@ -1,0 +1,9 @@
+extends _includes/layouts/main.pug
+
+block content
+  h1 Hello World
+
+  ul
+    each blog in collections.blog
+      li
+        a(href=blog.url)= blog.data.title
