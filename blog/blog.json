@@ -1,4 +1,4 @@
 {
     "layout": "layouts/blog.pug",
-    "tags": "blog"
+    "tags": ["blog"]
 }
