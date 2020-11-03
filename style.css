@@ -103,8 +103,7 @@ li:not(.collection-list__item)::before {
 .collection-list {
     list-style: none;
     display: grid;
-    column-gap: var(--spacer-lg);
-    row-gap: var(--spacer-md);
+    gap: var(--spacer-lg);
     grid-template-columns: repeat(auto-fill, minmax(40ch, 1fr));
     padding: 0;
     margin-top: var(--spacer-base);
@@ -131,9 +130,14 @@ li:not(.collection-list__item)::before {
     color: var(--cadet);
 }
 
-.item__subtitle {
+.item__episode {
     float: right;
     color: var(--cadet);
+}
+
+.item__guest {
+    color: var(--fire-opal);
+    font-weight: 500;
 }
 
 .collection-list__item:hover {
@@ -144,10 +148,23 @@ li:not(.collection-list__item)::before {
     color: var(--snow);
 }
 
+.collection-list__item:hover .item__guest {
+    color: var(--snow);
+}
+
+.collection-list__item:hover .item__episode {
+    color: var(--snow);
+}
+
 .blog-title {
     border-left: 10px solid var(--fire-opal);
     border-radius: 10px;
     padding: var(--spacer-md);
+}
+
+.blog-episode {
+    float: right;
+    color: var(--cadet);
 }
 
 footer {

@@ -1,5 +1,13 @@
 extend ./main.pug
 
 block content
-  h1.blog-title= title
+  if episode
+    p.blog-episode= episode
+  if guest
+    h1.blog-title
+      | #{title}
+      br
+      | mit #{guest}
+  else
+    h1.blog-title= title
   != content
