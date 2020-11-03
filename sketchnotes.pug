@@ -1,0 +1,16 @@
+extends _includes/layouts/main.pug
+
+block content
+  h1 Sketchnotes
+
+  h2 SoftwareArchitektur im Stream
+
+  ul.collection-list
+    each sketchnote in collections.softwarearchitekturImStream
+      li.collection-list__item
+        a.item__link(href=sketchnote.url)
+          if sketchnote.data.imageSrc
+              img.item__image(src=sketchnote.data.imageSrc)
+          small.item__date= sketchnote.date.toLocaleDateString('de-DE', {weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'})
+          h2.item__headline= sketchnote.data.title
+          p.item__description= sketchnote.data.description
