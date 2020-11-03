@@ -24,6 +24,10 @@ body {
     line-height: 1.5rem;
 }
 
+h1 {
+    line-height: 2.5rem;
+}
+
 a {
     color: var(--fire-opal);
     text-decoration: none;
