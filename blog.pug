@@ -3,11 +3,11 @@ extends _includes/layouts/main.pug
 block content
   h1 Blog
 
-  p Hier findest du meine Blogeinträge. 
+  p Hier findest du meine Blogeinträge rund um das Thema Sketchnotes in der IT. 
     | Viel Spaß beim Lesen!
 
   ul.collection-list
-    each blog in collections.blog
+    each blog in collections.blog.reverse()
       li.collection-list__item
         a.item__link(href=blog.url)
           if blog.data.imageSrc
