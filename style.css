@@ -48,6 +48,7 @@ li:not(.collection-list__item)::before {
 .navigation-bar {
     grid-area: navbar;
     background-color: var(--carribbean-green);
+    border-bottom: 2px solid var(--cadet);
 }
 
 .navbar {
@@ -86,6 +87,12 @@ li:not(.collection-list__item)::before {
     padding: var(--spacer-xl);
     width: 100ch;
     margin: 0 auto;
+}
+
+.content img {
+    display: block;
+    margin: 0 auto;
+    padding: var(--spacer-sm) 0;
 }
 
 .collection-list {
@@ -132,4 +139,5 @@ li:not(.collection-list__item)::before {
 footer {
     grid-area: footer;
     background-color: var(--carribbean-green);
+    border-top: 2px solid var(--cadet);
 }
