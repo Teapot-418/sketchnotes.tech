@@ -5,17 +5,39 @@ block content
 
   p Herzlich Willkommen auf meiner Webseite. Ich möchte mich hier dem Thema Sketchnotes widmen und dir mit Tipps und Tricks zur Seite stehen.
 
+  h2 Blog
+
   p Im Bereich 
     a(href="/blog") Blog
-    |  findest du Beiträge zu verschiedenen Themen rund um Sketchnotes in der IT.
+    |  findest du meine Blogbeiträge zu verschiedenen Themen rund um Sketchnotes in der IT.
+    |  Dies sind die neusten Beiträge:
+
+  ul.collection-list
+    each blog in collections.blog.reverse().slice(0,2)
+      li.collection-list__item
+        a.item__link(href=blog.url)
+          if blog.data.imageSrc
+              img.item__image(src=blog.data.imageSrc)
+          small.item__date= blog.date.toLocaleDateString('de-DE', {weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'})
+          h2.item__headline= blog.data.title
+          p.item__description= blog.data.description
+
+  h2 Sketchnotes
 
   p Im Bereich 
     a(href="/sketchnotes") Sketchnotes
     |  findest du von mir angefertigte Sketchnotes. Auch die, die für 
     a(href="https://software-architektur.tv") SoftwareArchitektur im Stream
-    |  entstanden sind.
+    |  entstanden sind. Dies sind die neusten Sketchnotes:
 
-  p Im Bereich 
-    a(href="/about") Über mich
-    |  erfährst du, wer ich bin.
+  ul.collection-list
+    each sketchnote in collections.sketchnotes.reverse().slice(0,2)
+      li.collection-list__item
+        a.item__link(href=sketchnote.url)
+          if sketchnote.data.imageSrc
+              img.item__image(src=sketchnote.data.imageSrc)
+          small.item__date= sketchnote.date.toLocaleDateString('de-DE', {weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'})
+          h2.item__headline= sketchnote.data.title
+          p.item__description= sketchnote.data.description
+
 
