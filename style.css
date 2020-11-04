@@ -58,6 +58,8 @@ li:not(.collection-list__item)::before {
 .navbar {
     padding: var(--spacer-base);
     display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacer-sm);
 }
 
 .navbar__item {
@@ -82,15 +84,12 @@ li:not(.collection-list__item)::before {
     margin: 0;
 }
 
-.navbar > *:not(:first-child) {
-    margin-left: var(--spacer-base);
-}
-
 .content {
     grid-area: content;
-    padding: var(--spacer-xl);
-    width: 100ch;
+    padding: var(--spacer-xl) var(--spacer-xs);
+    max-width: 100ch;
     margin: 0 auto;
+    min-height: 100%;
 }
 
 .content img {
@@ -104,7 +103,7 @@ li:not(.collection-list__item)::before {
     list-style: none;
     display: grid;
     gap: var(--spacer-lg);
-    grid-template-columns: repeat(auto-fill, minmax(40ch, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(35ch, 1fr));
     padding: 0;
     margin-top: var(--spacer-base);
 }
