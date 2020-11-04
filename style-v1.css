@@ -169,8 +169,12 @@ li:not(.collection-list__item)::before {
 }
 
 .iframe-container {
-    max-width: 650px;
+    max-width: 100ch;
     margin: 0 auto;
+}
+
+.iframe-container iframe {
+    width: 100%;
 }
 
 footer {
