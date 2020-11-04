@@ -94,9 +94,14 @@ li:not(.collection-list__item)::before {
 
 .content img {
     display: block;
-    margin: 0 auto;
-    padding: var(--spacer-sm) 0;
+    margin: var(--spacer-md) auto;
+    padding: 0;
     max-width: 100%;
+    border-left: 10px solid var(--fire-opal);
+    border-right: 10px solid var(--fire-opal);
+    border-radius: 10px;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
 }
 
 .collection-list {
