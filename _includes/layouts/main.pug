@@ -3,26 +3,55 @@ html(lang="en")
   head
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    if !title
-      title Sketchnotes in der IT
     link(rel="stylesheet" href="/style-v2.css")
+
+    if title
+      title= title
+    else
+      title Sketchnotes in der IT
     
     //- primary meta tags
-    if !title
+    if title
+      meta(name="title",content=title)
+    else
       meta(name="title",content="Sketchnotes in der IT")
+    if description
+      meta(name="description",content=description)
+    else
       meta(name="description",content="Eine Seite über Sketchnotes in der IT")
     
     //- Open Graph / Facebook
     meta(property="og:type",content="website")
     meta(property="og:url",content="https://www.sketchnotes.tech" + page.url)
+    if title
+      meta(property="og:title",content=title)
+    else
+      meta(property="og:title",content="Sketchmotes in der IT")
+    if description
+      meta(property="og:description",content=description)
+    else
+      meta(property="og:description",content="Eine Seite über Sketchmotes in der IT")
+    if imageUrl
+      meta(property="og:image",content="https://www.sketchnotes.tech" + imageUrl)
+    else
+      meta(property="og:image",content="https://www.sketchnotes.tech/img/logo.png")
     
     //- Twitter
-    if !title
-      meta(property="twitter:card",content="summary")
-      meta(property="twitter:url",content="https://www.sketchnotes.tech" + page.url)
+    meta(property="twitter:card",content="summary_large_image")
+    meta(property="twitter:url",content="https://www.sketchnotes.tech" + page.url)
+    meta(property="twitter:creator",content="@teapot4181")
+    if title
+      meta(property="twitter:title",content=title)
+    else
       meta(property="twitter:title",content="Sketchnotes in der IT")
+    if description
+      meta(property="twitter:description",content=description)
+    else
       meta(property="twitter:description",content="Eine Seite über Sketchnotes in der IT")
-    block meta
+    if imageUrl
+      meta(property="twitter:image",content="https://www.sketchnotes.tech" + imageUrl)
+    else
+      meta(property="twitter:image",content="https://www.sketchnotes.tech/img/logo.png")
 
   body.layout
     header.navigation-bar
