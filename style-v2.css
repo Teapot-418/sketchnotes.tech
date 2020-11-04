@@ -97,11 +97,14 @@ li:not(.collection-list__item)::before {
     margin: var(--spacer-md) auto;
     padding: 0;
     max-width: 100%;
-    border-left: 10px solid var(--fire-opal);
-    border-right: 10px solid var(--fire-opal);
     border-radius: 10px;
     border-top: 1px solid lightgray;
     border-bottom: 1px solid lightgray;
+}
+
+.content img:not(.item__image) {
+    border-left: 10px solid var(--fire-opal);
+    border-right: 10px solid var(--fire-opal);
 }
 
 .collection-list {
@@ -144,6 +147,10 @@ li:not(.collection-list__item)::before {
 .item__guest {
     color: var(--fire-opal);
     font-weight: 500;
+}
+
+.item__image {
+    border: 1px lightgray solid;
 }
 
 .collection-list__item:hover {

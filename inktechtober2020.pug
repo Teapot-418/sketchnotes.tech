@@ -1,0 +1,18 @@
+extends _includes/layouts/main.pug
+
+block content
+  h1 inktechtober 2020
+
+  p 
+  | Im Oktober 2020 habe ich am inktechtober von 
+  a(href="https://letssketchtech.com/") Let's Sketch Tech
+  |  teilgenommen. Neben den entstandenen Bildern habe ich die Erstellungsvideos in meinem Youtube-Kanal hochgeladen, mit einem englischen VoiceOver zur Entstehung des Bildes.
+  |  Diese Videos sowie eine Beschreibung auf Deutsch und natürlich das Bild selber findest du hinter den einzelnen Karten.
+
+  ul.collection-list
+    each image in collections.inktechtober2020
+      li.collection-list__item
+        a.item__link(href=image.url)
+          small.item__date= image.date.toLocaleDateString('de-DE', {weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'})
+          h2.item__headline= image.data.topic
+          img.item__image(src=image.data.imageUrl)

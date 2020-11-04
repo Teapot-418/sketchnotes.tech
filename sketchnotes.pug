@@ -14,8 +14,6 @@ block content
     each sketchnote in collections.softwarearchitekturImStream.reverse()
       li.collection-list__item
         a.item__link(href=sketchnote.url)
-          if sketchnote.data.imageSrc
-            img.item__image(src=sketchnote.data.imageSrc)
           small.item__date= sketchnote.date.toLocaleDateString('de-DE', {weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'})
           small.item__episode= sketchnote.data.episode
           h2.item__headline= sketchnote.data.title
