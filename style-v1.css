@@ -111,6 +111,8 @@ li:not(.collection-list__item)::before {
 .collection-list__item {
     border-left: 10px solid var(--fire-opal);
     border-right: 10px solid var(--fire-opal);
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
     border-radius: 10px;
     padding: var(--spacer-sm);
     background-color: white;
