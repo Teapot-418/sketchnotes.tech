@@ -1,6 +1,7 @@
 ---
 title: Sketchnotes mit Procreate
 description: Hier erfährst du, wie ich beim Sketchnoten mit Procreate vorgehe
+imageUrl: /img/blog/2020-11-03_sketchnotes_mit_procreate/ebenen.jpg
 ---
 Seit einigen Monaten erstelle ich nun schon Sketchnotes für [SoftwareArchitektur im Stream](https://software-architektur.tv/). Seit Folge 14 fertige ich die Sketchnotes mit [Procreate](https://procreate.art/) auf einem iPad an. Da es sich bei Procreate um eine App für Künstler handelt, gibt es einiges zu beachten. Ich möchte dir hier mein aktuelles Vorgehen vorstellen, in der Hoffnung, dass dir das beim Sketchnoten in Procreate helfen wird.
 
