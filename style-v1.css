@@ -105,7 +105,7 @@ li:not(.collection-list__item)::before {
     gap: var(--spacer-lg);
     grid-template-columns: repeat(auto-fill, minmax(35ch, 1fr));
     padding: 0;
-    margin-top: var(--spacer-base);
+    margin: var(--spacer-base) 0;
 }
 
 .collection-list__item {
@@ -164,6 +164,11 @@ li:not(.collection-list__item)::before {
 .blog-episode {
     float: right;
     color: var(--cadet);
+}
+
+.iframe-container {
+    max-width: 650px;
+    margin: 0 auto;
 }
 
 footer {
