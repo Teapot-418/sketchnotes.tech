@@ -10,8 +10,6 @@ block content
     each blog in collections.blog.reverse()
       li.collection-list__item
         a.item__link(href=blog.url)
-          if blog.data.imageSrc
-              img.item__image(src=blog.data.imageSrc)
           small.item__date= blog.date.toLocaleDateString('de-DE', {weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'})
           h2.item__headline= blog.data.title
           p.item__description= blog.data.description
