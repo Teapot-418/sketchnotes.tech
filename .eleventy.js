@@ -6,4 +6,7 @@ module.exports = function (eleventyConfig) {
     const markdownAttributes = require('markdown-it-attrs');
     const markdownLibrary = markdown().use(markdownAttributes);
     eleventyConfig.setLibrary('md', markdownLibrary);
+
+    const embedYoutube = require('eleventy-plugin-youtube-embed');
+    eleventyConfig.addPlugin(embedYoutube);
 };
