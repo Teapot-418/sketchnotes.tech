@@ -9,4 +9,7 @@ module.exports = function (eleventyConfig) {
 
     const embedYoutube = require('eleventy-plugin-youtube-embed');
     eleventyConfig.addPlugin(embedYoutube);
+
+    const pluginRss = require('@11ty/eleventy-plugin-rss');
+    eleventyConfig.addPlugin(pluginRss);
 };
