@@ -9,7 +9,9 @@
     "markdown-it": "^12.0.2",
     "markdown-it-attrs": "^3.0.3"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@11ty/eleventy-plugin-rss": "^1.0.9"
+  },
   "scripts": {
     "serve": "npx @11ty/eleventy --serve",
     "test": "echo \"Error: no test specified\" && exit 1"
