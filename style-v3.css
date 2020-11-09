@@ -89,7 +89,6 @@ li:not(.collection-list__item)::before {
     padding: var(--spacer-xl) var(--spacer-xs);
     max-width: 100ch;
     margin: 0 auto;
-    min-height: 100%;
 }
 
 .content img {
