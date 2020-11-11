@@ -8,6 +8,11 @@ block content
       | #{title}
       br
       | mit #{guest}
+  else if subtitle
+    h1.blog-title 
+      span.blog-subtitle= subtitle
+      br
+      | #{title}
   else
     h1.blog-title= title
   != content
