@@ -14,10 +14,12 @@ block content
     |  Dies sind die neusten Beiträge:
 
   ul.collection-list
-    each blog in collections.blog.reverse().slice(0,2)
+    each blog in collections.blog.reverse().slice(0,2).reverse()
       li.collection-list__item
         a.item__link(href=blog.url)
           small.item__date= blog.date.toLocaleDateString('de-DE', {weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'})
+          if blog.data.subtitle
+            h3.item__how_to #{blog.data.subtitle}
           h2.item__headline= blog.data.title
           p.item__description= blog.data.description
 
