@@ -3,7 +3,7 @@ html(lang="en")
   head
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    link(rel="stylesheet" href="/style-v4.css")
+    link(rel="stylesheet" href="/style-v5.css")
 
     if title
       title= title
@@ -68,4 +68,15 @@ html(lang="en")
 
     footer
       nav.navbar.navbar--footer
-        a.navbar__item(href="/impressum") Impressum
+        div.footer__left
+          a.navbar__item(href="/impressum") Impressum
+          a.navbar__item(href="/about_this_page") Über diese Seite
+        div.footer__right
+          a(href="https://twitter.com/teapot4181",title="Twitter")
+            img.footer__icon(src="/img/twitter.svg")
+          a(href="https://www.instagram.com/418_teapot",title="Instagram")
+            img.footer__icon(src="/img/instagram.svg")
+          a(href="https://www.youtube.com/channel/UCuZs1YPHHn8PpSiZsPKbtLA",title="Youtube")
+            img.footer__icon(src="/img/youtube.svg")
+          a(href="/feed.xml",title="RSS")
+            img.footer__icon(src="/img/rss.svg")
