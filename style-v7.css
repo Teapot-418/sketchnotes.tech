@@ -83,7 +83,6 @@ li:not(.collection-list__item)::before {
     border-radius: 10px;
     border: 2px solid transparent;
     align-self: center;
-    transition: all 500ms ease;
 }
 
 .navbar__item:hover {
@@ -138,7 +137,6 @@ li:not(.collection-list__item)::before {
     border-radius: 10px;
     padding: var(--spacer-sm);
     background-color: white;
-    transition: all 500ms ease;
 }
 
 .item__link {
