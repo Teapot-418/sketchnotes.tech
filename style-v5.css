@@ -76,6 +76,7 @@ li:not(.collection-list__item)::before {
     background-color: var(--snow);
     border: 2px solid var(--cadet);
     opacity: 0.8;
+    transition: all 500ms ease;
 }
 
 .navbar > a > img {
@@ -159,22 +160,27 @@ li:not(.collection-list__item)::before {
 
 .collection-list__item:hover {
     background-color: var(--fire-opal);
+    transition: all 500ms ease;
 }
 
 .collection-list__item:hover .item__date {
     color: var(--snow);
+    transition: all 500ms ease;
 }
 
 .collection-list__item:hover .item__guest {
     color: var(--snow);
+    transition: all 500ms ease;
 }
 
 .collection-list__item:hover .item__how_to {
     color: var(--snow);
+    transition: all 500ms ease;
 }
 
 .collection-list__item:hover .item__episode {
     color: var(--snow);
+    transition: all 500ms ease;
 }
 
 .blog-title {
@@ -206,4 +212,24 @@ footer {
     grid-area: footer;
     background-color: var(--carribbean-green);
     border-top: 2px solid var(--cadet);
+}
+
+.navbar--footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: center;
+}
+
+.footer__right {
+    display: flex;
+    gap: var(--spacer-base);
+}
+
+.footer__icon {
+    width: 2rem;
+}
+
+.footer__icon:hover {
+    transform: scale(2);
 }
