@@ -3,7 +3,7 @@ html(lang="en")
   head
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    link(rel="stylesheet" href="/style-v5.css")
+    link(rel="stylesheet" href="/style-v6.css")
 
     if title
       title= title
@@ -56,7 +56,7 @@ html(lang="en")
   body.layout
     header.navigation-bar
       nav.navbar.navbar
-        a(href="/")
+        a.navbar__item--image(href="/")
           img(src="/img/teapot.PNG")
         a.navbar__item(href="/blog") Blog
         a.navbar__item(href="/sketchnotes") Sketchnotes
@@ -72,11 +72,11 @@ html(lang="en")
           a.navbar__item(href="/impressum") Impressum
           a.navbar__item(href="/about_this_page") Über diese Seite
         div.footer__right
-          a(href="https://twitter.com/teapot4181",title="Twitter")
+          a.navbar__item--image(href="https://twitter.com/teapot4181",title="Twitter")
             img.footer__icon(src="/img/twitter.svg")
-          a(href="https://www.instagram.com/418_teapot",title="Instagram")
+          a.navbar__item--image(href="https://www.instagram.com/418_teapot",title="Instagram")
             img.footer__icon(src="/img/instagram.svg")
-          a(href="https://www.youtube.com/channel/UCuZs1YPHHn8PpSiZsPKbtLA",title="Youtube")
+          a.navbar__item--image(href="https://www.youtube.com/channel/UCuZs1YPHHn8PpSiZsPKbtLA",title="Youtube")
             img.footer__icon(src="/img/youtube.svg")
-          a(href="/feed.xml",title="RSS")
+          a.navbar__item--image(href="/feed.xml",title="RSS")
             img.footer__icon(src="/img/rss.svg")
