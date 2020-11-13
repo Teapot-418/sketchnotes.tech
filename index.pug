@@ -14,7 +14,7 @@ block content
     |  Dies sind die neusten Beiträge:
 
   ul.collection-list
-    each blog in collections.blog.reverse().slice(0,2).reverse()
+    each blog in collections.blog.slice(0,2)
       li.collection-list__item
         a.item__link(href=blog.url)
           small.item__date= blog.date.toLocaleDateString('de-DE', {weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'})
