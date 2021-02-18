@@ -1,6 +1,7 @@
 module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy('*.css');
     eleventyConfig.addPassthroughCopy('img');
+    eleventyConfig.addPassthroughCopy('assets');
 
     const markdown = require('markdown-it');
     const markdownAttributes = require('markdown-it-attrs');
